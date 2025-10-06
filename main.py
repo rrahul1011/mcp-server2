@@ -6,7 +6,7 @@ import json
 
 # Use a temporary directory which should be writable
 TEMP_DIR = tempfile.gettempdir()
-DB_PATH = os.path.join(TEMP_DIR, "sales.db")
+DB_PATH =  "sales.db"
 print(f"Database path: {DB_PATH}")
 
 mcp = FastMCP("Data Companion")
