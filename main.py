@@ -28,7 +28,7 @@ async def execute_sql(query: str):
 
 # ------------------ Resources ------------------
 
-@mcp.resource("sql:///prompt", mime_type="text/plain")
+@mcp.resource("resource://prompt")
 def sql_prompt():
     """Provide a prompt describing the DB schema and SQL generation instructions."""
     schema_description = """
